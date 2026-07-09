@@ -1,0 +1,17 @@
+// Last updated: 7/9/2026, 9:15:05 AM
+class Solution {
+    public int findLengthOfLCIS(int[] arr) {
+    int ans=1;
+    int count=1;
+
+    for(int i=0;i<arr.length-1;i++){
+        if(arr[i]<arr[i+1]){
+            count++;
+        }else{
+            count=1;
+        }
+        ans=Math.max(ans,count);
+    }
+    return ans;    
+    }
+}
