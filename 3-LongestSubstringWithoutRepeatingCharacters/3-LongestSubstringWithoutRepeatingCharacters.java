@@ -1,4 +1,4 @@
-// Last updated: 7/14/2026, 12:04:01 PM
+// Last updated: 7/14/2026, 12:04:18 PM
 1class Solution {
 2    public int lengthOfLongestSubstring(String s) {
 3    HashMap<Character,Integer>map=new HashMap<>();
