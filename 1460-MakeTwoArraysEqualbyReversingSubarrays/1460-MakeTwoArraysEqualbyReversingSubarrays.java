@@ -1,18 +1,24 @@
-// Last updated: 7/27/2026, 12:12:56 PM
+// Last updated: 7/27/2026, 1:39:03 PM
 1class Solution {
-2    public boolean canBeEqual(int[] target, int[] arr) {
-3    int [] freq=new int[1001];
-4    for(int x:target){
-5        freq[x]++;
-6    }
-7    for(int x:arr){
-8        freq[x]--;
-9    }   
-10    for(int x:freq){
-11        if(x!=0){
-12            return false;
-13        }
-14    } 
-15    return true;
-16    }
-17}
+2    public int countConsistentStrings(String s, String[] arr) {
+3    List<Character>list=new ArrayList<>();
+4    for(char ch:s.toCharArray()){
+5        list.add(ch);
+6    } 
+7    int count=0;
+8    for(String word:arr){
+9        boolean ok = true; 
+10        for(char ch:word.toCharArray()){
+11
+12        if(!list.contains(ch)){
+13            ok=false;
+14            break;
+15        }
+16        }
+17        if(ok){
+18            count++;
+19        }
+20    } 
+21    return count;
+22    }
+23}
