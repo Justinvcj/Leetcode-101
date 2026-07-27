@@ -1,4 +1,4 @@
-// Last updated: 7/27/2026, 12:12:39 PM
+// Last updated: 7/27/2026, 12:12:56 PM
 1class Solution {
 2    public boolean canBeEqual(int[] target, int[] arr) {
 3    int [] freq=new int[1001];
