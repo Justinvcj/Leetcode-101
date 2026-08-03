@@ -1,4 +1,4 @@
-// Last updated: 8/3/2026, 12:21:59 PM
+// Last updated: 8/3/2026, 12:23:07 PM
 1class Solution {
 2    public int divisorSubstrings(int num, int k) {
 3    int count=0;
