@@ -1,0 +1,16 @@
+// Last updated: 8/11/2026, 2:09:58 PM
+class Solution {
+    public int countGoodSubstrings(String s) {
+    int count=0;
+
+    for(int i=0;i<=s.length()-3;i++){
+        if(s.charAt(i) != s.charAt(i+1) &&
+            s.charAt(i) != s.charAt(i+2) &&
+            s.charAt(i+1) != s.charAt(i+2)){
+
+    count++;
+            }
+    }
+     return count;  
+    }
+}
