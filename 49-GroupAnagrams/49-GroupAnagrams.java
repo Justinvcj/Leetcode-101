@@ -1,19 +1,19 @@
-// Last updated: 7/9/2026, 9:17:27 AM
-class Solution {
-    public List<List<String>> groupAnagrams(String[] strs) {
-    HashMap<String,List<String>>list=new HashMap<>();
-    for(String word:strs){
-    int [] freq=new int[26];
-    for(char ch:word.toCharArray()){
-        freq[ch-'a']++;
-    } 
-    StringBuilder sb=new StringBuilder();  
-    for(int count:freq){
-        sb.append(count).append("#");
-    }
-    list.putIfAbsent(sb.toString(),new ArrayList<>());
-    list.get(sb.toString()).add(word);
-    }
-    return new ArrayList<>(list.values());
-    }
-}
+// Last updated: 9/10/2026, 6:38:23 AM
+1class Solution {
+2    public List<List<String>> groupAnagrams(String[] strs) {
+3    HashMap<String,List<String>>list=new HashMap<>();
+4    for(String word:strs){
+5    int [] freq=new int[26];
+6    for(char ch:word.toCharArray()){
+7        freq[ch-'a']++;
+8    } 
+9    StringBuilder sb=new StringBuilder();  
+10    for(int count:freq){
+11        sb.append(count).append("#");
+12    }
+13    list.putIfAbsent(sb.toString(),new ArrayList<>());
+14    list.get(sb.toString()).add(word);
+15    }
+16    return new ArrayList<>(list.values());
+17    }
+18}
